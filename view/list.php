@@ -21,6 +21,8 @@ echo '</pre>';*/
 				<a href="./index.php?formAction=readForm&id=<?php echo($value["id"]); ?>">Editer</a> 
 				<a href="./index.php?formAction=delForm&id=<?php echo($value["id"]); ?>" 
 					onclick="return confirm('Voulez-vous vraiment supprimer ce questionnaire ?')">Supprimer</a> 
+				<a href="./index.php?formAction=resultForm&id=<?php echo($value["id"]); ?>">Résultat</a> 
+
 			</td>
 		</tr>
 	 <?php endforeach; ?>

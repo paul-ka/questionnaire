@@ -241,18 +241,18 @@ function userQuest($quest, $type, $form){
 	 if($questContent != ''){
 	    if($type == 'OuiNon'){
 		    $render .= "<div class='checkbox'>";
-    		$render .= "<label><input type='checkbox'> ".$questContent."</label>";
+    		$render .= "<label><input type='checkbox' name='{$quest}'> ".$questContent."</label>";
   			$render .= "</div>";
 
 	 	}elseif ($type == 'Texte') {
 		 	$render = "<div class='form-group'>";
 		 	$render .= "<label for='formTitle'>{$questContent}</label>";
-     		$render.= "<input type='text' class='form-control'  id=\"{$questContent}\" placeholder='Réponse' name='{$questContent}' value=\"\" >";
+     		$render.= "<input type='text' class='form-control'  id=\"{$questContent}\" placeholder='Réponse' name='{$quest}' value=\"\" >";
 		 	$render.= "</div>";
 	 	}else{
 		 	$render = "<div class='form-group'>";
 		 	$render .= "<label for='formTitle'>{$questContent}</label>";
-     		$render.= "<input type='number' class='form-control'  id=\"{$questContent}\" placeholder='Nombre' name='{$questContent}' value=\"\" >";
+     		$render.= "<input type='number' class='form-control'  id=\"{$questContent}\" placeholder='Nombre' name='{$quest}' value=\"\" >";
 		 	$render.= "</div>";
 	 	}
 	 }    

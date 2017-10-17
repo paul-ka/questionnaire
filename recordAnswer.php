@@ -1,4 +1,3 @@
-<?php include "./controler/auth.php" ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,30 +11,17 @@
   <div class="container">
     <?php include "./controler/conf.php" ?>
     <?php include "./controler/database.php" ?>
-    <a href="./logout.php">Déconnexion</a>
-    <?php include "./controler/readForm.php" ?>
+    <?php include "./controler/readAnswer.php" ?>
   </div>
-
-<!-- Editor Quill -->
-<script type="text/javascript" src="./asset/js/quill.js"></script>
-
-<script type="text/javascript">
-  var quill = new Quill('#snow-container', {
-    placeholder: 'Compose an epic...',
-    theme: 'snow'
-  });
-</script>
 
 
 
 <!-- pour debuggage-->
-   <!-- <pre>
+   <pre>
    <?php
-   print_r($form);
+   print_r($answer);
    echo "Superglobale SERVER<BR>";
    print_r($_SERVER);
-   echo "Superglobale FILE<BR>";
-   print_r($_FILE);
    echo "Superglobale REQUEST<BR>";
    print_r($_REQUEST);
    echo "__FILE__<BR>";
@@ -43,6 +29,6 @@
    echo "<br>";
    echo dirname(__FILE__);
    ?>
- </pre>   -->
+ </pre>
 </body>
 </html>

@@ -16,5 +16,7 @@
         echo(userQuest('question4', $form['questionType4'], $form)); 
         echo(userQuest('question5', $form['questionType5'], $form)); 
         ?>
+        <input type="hidden" name="formId" value="<?php echo $form['id'] ?>">
+
   <button type="submit" class="btn btn-primary">Valider</button>
 </form>

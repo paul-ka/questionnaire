@@ -30,4 +30,13 @@ $form = array(
 	'questionType5'=>''
 );
 
+$answer = array(
+	'id'=>0, 
+	'formId'=>'', 
+	'question1'=>'',
+	'question2'=>'',
+	'question3'=>'',
+	'question4'=>'',
+	'question5'=>''
+);
 
